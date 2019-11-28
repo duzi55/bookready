@@ -1,7 +1,9 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { IndextapsComponent } from './compoent/indextaps/indextaps.component';
-import { BookdetailsComponent } from './compoent/bookdetails/bookdetails.component';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {IndextapsComponent} from './component/indextaps/indextaps.component';
+import {BookdetailsComponent} from './component/bookdetails/bookdetails.component';
+import {ReplyComponent} from './component/reply/reply.component';
+import {CommentComponent} from './component/comment/comment.component';
 
 
 const routes: Routes = [
@@ -10,6 +12,15 @@ const routes: Routes = [
   },
   {
     path: 'bookdetails', component: BookdetailsComponent,
+    children: [{
+      path: 'reply', component: ReplyComponent
+    },
+      {
+        path: 'comment', component: CommentComponent
+      },
+      {
+        path: '**', redirectTo: 'comment'
+      }]
   },
   {
     path: '', component: IndextapsComponent,
@@ -22,4 +33,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

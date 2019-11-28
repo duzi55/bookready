@@ -11,6 +11,9 @@ import { FooterComponent } from './nav/footer/footer.component';
 import { BookdetailsComponent } from './component/bookdetails/bookdetails.component';
 import { CommentComponent } from './component/comment/comment.component';
 import { ReplyComponent } from './component/reply/reply.component';
+import { ReadComponent } from './component/read/read.component';
+import { MoreComponent } from './component/more/more.component';
+import { SearchComponent } from './component/search/search.component';
 
 // import * as $ from '@types/jquery/dist/jquery.slim';
 
@@ -24,7 +27,10 @@ import { ReplyComponent } from './component/reply/reply.component';
     FooterComponent,
     BookdetailsComponent,
     CommentComponent,
-    ReplyComponent
+    ReplyComponent,
+    ReadComponent,
+    MoreComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,44 @@
+
+<div class="btn-group btn-group-justified">
+  <span class="btn btn-default" (click)="downFont()" >--</span>
+  <span class="btn btn-default"  data-toggle="modal" data-target="#myback">换肤</span>
+  <span  class="btn btn-default" (click)="upFont()">++</span>
+</div>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <span class="panel-title">Panel info</span>
+
+  </div>
+  <div class="panel-body"  [ngStyle]="{'background-color':skin}">
+   <div class="well-sm m-big-font" [ngStyle]="{'font-size' : font,'font-family':fontFamily,'letter-spacing':spacing}" >
+     <p>&nbsp; &nbsp; &nbsp;<span style="font-weight: bold;">&nbsp;现今，AI已成为时下最热门的风口，各行各业的公司都在试图通过该技术提升工作效率和竞争优势，而AI软件工具开发包则是其中的基石，它有利于企业创建最佳的架构和系统来处理AI工作所必需的海量数据。在信息技术不断发展的今天，物联网正逐步迈入一个与AI深度融合的新阶段—AIoT（AI+IoT）。随着AIoT时代的到来，数以万计IoT设备或将产生海量数据，而迫于通信功耗压力、数据安全以及隐私保护等因素，AI也从云端向终端侧发展，但是如何高效地开发、验证、测试终端侧AI并有效实现场景化部署仍旧是一大难题.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 此外，在物联网向智能化转型的过程中，对于开发商和制造商来说痛点是什么？需要如何引入AI技术来解决需求？怎样才能发挥出AI芯片的实际用途和强大算力，及与广泛的物联网应用完美融合的巨大优势？12月8日，Qualcomm AI &amp; IoT开发者技术开放日将在北京举办，多位来自Qualcomm和合作伙伴的业界领先专家将共同带来一场别开生面的技术分享盛宴。<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;本次会议以“智慧物联，决胜边缘”为主题，围绕Qualcomm最新动作与进展、高通骁龙处理器的AI Kit功能应用开发和IoT在移动通信中的应用等热门话题展开分享。<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;本次活动将在12月8号13：30开始签到，内容精彩，我们期待你的到来，在北京市海淀区清华东路9号院3号楼等你哦！现今，AI已成为时下最热门的风口，各行各业的公司都在试图通过该技术提升工作效率和竞争优势，而AI软件工具开发包则是其中的基石，它有利于企业创建最佳的架构和系统来处理AI工作所必需的海量数据。在信息技术不断发展的今天，物联网正逐步迈入一个与AI深度融合的新阶段—AIoT（AI+IoT）。随着AIoT时代的到来，数以万计IoT设备或将产生海量数据，而迫于通信功耗压力、数据安全以及隐私保护等因素，AI也从云端向终端侧发展，但是如何高效地开发、验证、测试终端侧AI并有效实现场景化部署仍旧是一大难题。<br> 此外，在物联网向智能化转型的过程中，对于开发商和制造商来说痛点是什么？需要如何引入AI技术来解决需求？怎样才能发挥出AI芯片的实际用途和强大算力，及与广泛的物联网应用完美融合的巨大优势？12月8日，Qualcomm AI &amp; IoT开发者技术开放日将在北京举办，多位来自Qualcomm和合作伙伴的业界领先专家将共同带来一场别开生面的技术分享盛宴。<br>&nbsp; &nbsp; &nbsp; &nbsp;本次会议以“智慧物联，决胜边缘”为主题，围绕Qualcomm最新动作与进展、高通骁龙处理器的AI Kit功能应用开发和IoT在移动通信中的应用等热门话题展开分享。</span><br></p>
+   </div>
+
+
+
+  </div>
+</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top: 30%">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">设置</h4>
+      </div>
+      <div class="modal-body" style="padding-left: 10%">
+        <div style="text-align: center">
+        <span class="btn-sm btn-default" style="margin: 5px ;background-color: #1b8c4880" (click)="changeSkin('#1b8c4880')" >抹茶绿</span>
+        <span class="btn-sm btn-default" style="margin: 5px;background-color: #32b15f3d" (click)="changeSkin('#32b15f3d')" >护眼绿</span>
+        <span class="btn-sm btn-default" style="margin: 5px;background-color: #f9bd6357" (click)="changeSkin('#f9bd6357')" >亚光橙</span>
+        <span class="btn-sm btn-default" style="margin: 5px;background-color: #da6fb42e" (click)="changeSkin('#da6fb42e')" >少女粉</span>
+        <span class="btn-sm btn-default" style="margin: 5px;background-color: #eeeeee" (click)="changeSkin('#eeeeee')" >正常人</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-default " data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-sm btn-primary">提交更改</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>

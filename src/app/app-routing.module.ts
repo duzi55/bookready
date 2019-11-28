@@ -4,6 +4,7 @@ import {IndextapsComponent} from './component/indextaps/indextaps.component';
 import {BookdetailsComponent} from './component/bookdetails/bookdetails.component';
 import {ReplyComponent} from './component/reply/reply.component';
 import {CommentComponent} from './component/comment/comment.component';
+import {ReadComponent} from './component/read/read.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,9 @@ const routes: Routes = [
   },
   {
     path: '', component: IndextapsComponent,
+  },
+  {
+    path: 'read', component: ReadComponent,
   }
 
 

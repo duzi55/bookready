@@ -26,7 +26,7 @@
 
         <a href="#" class="btn btn-info ">赞(0)</a>
         <a href="#" class="btn btn-info">踩(0)</a>
-       <a href="#" class="btn btn-info" routerLink="/bookdetails/reply">写评论</a>
+       <a href="#" class="btn btn-info" data-toggle="modal" data-target="#reply">写评论</a>
         <a class="btn btn-info"  data-toggle="modal" data-target="#bookComment">评论数(0)</a>
       </div>
        </span>
@@ -210,3 +210,35 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal -->
 </div>
+<!-- 模态框（Modal） -->
+
+<div class="modal fade" style="margin-top: 60%;z-index: 9999;position: absolute;left:0;background-color: #6864698f;height: 100%;width: 100%;" id="reply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  data-backdrop="static" keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #06a696;text-align: center;">
+
+      <span class="btn  btn-lg btn-block">
+        <h4>写评论</h4>
+      </span>
+
+    </div><!-- /.modal-content -->
+    <br>
+    <div class="well" >
+      加载中......
+    </div>
+    <br>
+
+     <div class="btn-group btn-group-justified">
+
+        <span href="#" class="btn btn-info ">取消</span>
+        <span href="#" class="btn btn-info">提交</span>
+
+      </div>
+
+    <br>
+    <div class="btn btn-info btn-lg btn-block" >
+      加载中......
+    </div>
+
+  </div><!-- /.modal -->
+</div>
+

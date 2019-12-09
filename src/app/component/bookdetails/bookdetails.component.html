@@ -60,12 +60,17 @@
 </div>
 
 <!-- 模态框（Modal） -->
-<div class="modal fade" style="margin-top: 60%" id="loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  data-backdrop="static" keyboard="false">
+
+<div class="modal fade" style="margin-top: 60%;z-index: 9999;position: absolute;left:0;background-color: #6864698f;height: 100%;width: 100%;" id="loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  data-backdrop="static" keyboard="false">
   <div class="modal-dialog">
-    <div class="modal-content" style="background-color: #beceac;text-align: center;">
+    <div class="modal-content" style="background-color: #06a696;text-align: center;">
 
         <span class="spinner spinnerTwo"></span>
 
     </div><!-- /.modal-content -->
+    <br>
+    <div class="btn btn-info btn-lg btn-block" >
+      加载中......
+    </div>
   </div><!-- /.modal -->
 </div>

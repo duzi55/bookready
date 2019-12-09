@@ -4,7 +4,7 @@
     top: 0px;
     width: 100%;
     height: 50px;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .m-footer {
@@ -14,5 +14,5 @@
     width: 100%;
     height: 50px;
     background-color: #eee;
-    z-index: 9999;
+    z-index: 9998;
 }

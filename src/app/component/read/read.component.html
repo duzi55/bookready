@@ -17,6 +17,7 @@
 
 
   </div>
+  <app-comment></app-comment>
 </div>
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top: 30%">
@@ -34,6 +35,15 @@
         <span class="btn-sm btn-default" style="margin: 5px;background-color: #da6fb42e" (click)="changeSkin('#da6fb42e')" >少女粉</span>
         <span class="btn-sm btn-default" style="margin: 5px;background-color: #eeeeee" (click)="changeSkin('#eeeeee')" >正常人</span>
         </div>
+
+      <hr>
+      <div style="text-align: center">
+        <span class="btn-sm btn-default" style="margin: 5px ;background-color: #1b8c4880" (click)="changeFontFamily('FangSong')" >仿宋</span>
+        <span class="btn-sm btn-default" style="margin: 5px;background-color: #32b15f3d" (click)="changeFontFamily('KaiTi')" >楷体</span>
+        <span class="btn-sm btn-default" style="margin: 5px;background-color: #f9bd6357" (click)="changeFontFamily('STXingkai')" >行楷</span>
+        <span class="btn-sm btn-default" style="margin: 5px;background-color: #da6fb42e" (click)="changeFontFamily('MingLiU')" >细明体</span>
+        <span class="btn-sm btn-default" style="margin: 5px;background-color: #eeeeee" (click)="changeFontFamily('STHeiti')" >华文黑体</span>
+      </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-sm btn-default " data-dismiss="modal">关闭</button>

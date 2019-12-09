@@ -8,15 +8,16 @@ import { Component, OnInit , ViewChild} from '@angular/core';
 })
 export class ReadComponent implements OnInit {
   public fontSize = 100;
-  public font = '100%'
+  public font = '100%';
   public skin = '#eeeeee';
-  public fontFamily = 'KaiTi'
+  public fontFamily = 'Xingkai';
   public spacing = '5px'
   constructor() { }
 
   ngOnInit() {
     if (window.localStorage.getItem('skin')) {
       this.skin = window.localStorage.getItem('skin');
+      this.fontFamily = window.localStorage.getItem('fontFamily');
     }
   }
   upFont() {
@@ -36,5 +37,11 @@ export class ReadComponent implements OnInit {
   changeSkin(value: string) {
     this.skin = value;
     window.localStorage.setItem('skin', this.skin);
+  }
+  changeFontFamily(value: string) {
+    console.log(value)
+    this.fontFamily = value;
+    console.log(this.fontFamily)
+    window.localStorage.setItem('fontFamily', this.fontFamily);
   }
 }

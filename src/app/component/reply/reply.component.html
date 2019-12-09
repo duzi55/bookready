@@ -1,5 +1,5 @@
 <div class="well">
-<form class="form-horizontal" >
+<div class="form-horizontal" >
   <fieldset>
     <div class="form-group">
       <label for="textArea" class="col-lg-2 control-label">回复:<span>独自55</span></label>
@@ -13,9 +13,19 @@
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2" >
         <button type="reset" class="btn btn-default" routerLink="/bookdetails/comment">取消</button>
-        <button type="submit" class="btn btn-info" style="margin-left: 10px">提交</button>
+        <button  class="btn btn-info" style="margin-left: 10px" data-toggle="modal" data-target="#loading">提交</button>
       </div>
     </div>
   </fieldset>
-</form>
+</div>
+</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" style="margin-top: 60%" id="loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  data-backdrop="static" keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #beceac;text-align: center;">
+
+      <span class="spinner spinnerTwo"></span>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
 </div>
